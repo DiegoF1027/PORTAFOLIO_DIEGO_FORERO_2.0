@@ -1,0 +1,35 @@
+#headerPortfolio{
+    padding-top: 4rem!important;
+}
+
+#headerDiego{
+    font-size: 2.1rem;
+}
+
+#links a {
+    position: relative;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: inherit;
+    text-decoration: none;
+    transition: 0.4s ease-in-out;
+}
+
+#links a:hover{
+    color: #D4E157;
+}
+
+#links a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px; /* Ajusta según el espacio deseado */
+    width: 0;
+    height: 2px;
+    background-color: #D4E157;
+    transition: width 0.4s ease-in-out;
+}
+
+#links a:hover::after {
+    width: 100%;
+}

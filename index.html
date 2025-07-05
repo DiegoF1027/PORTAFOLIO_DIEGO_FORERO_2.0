@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diego Forero - Desarrollador Junior</title>
+    <link rel="icon" href="/assets/imgs/portafolio.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body class="text-white font-sans">
+    <!-- Barra de navegación -->
+    <header class="bg-black" id="headerPortfolio">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center">
+                <div class="text-white font-bold text-lg tracking-wide" id="headerDiego">
+                    DIEGO FORERO
+                </div>
+                <div class="hidden md:flex space-x-8" id="links">
+                    <a href="#" class="text-gray-300 hover:text-white transition-colors duration-300">Trabajo</a>
+                    <a href="#" class="text-gray-300 hover:text-white transition-colors duration-300">Acerca de mí</a>
+                    <a href="#" class="text-gray-300 hover:text-white transition-colors duration-300">Contacto</a>
+                </div>
+                <!-- Menú móvil -->
+                <div class="md:hidden">
+                    <button class="text-gray-300 hover:text-white">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Sección Hero -->
+    <section class="bg-black min-h-screen flex items-center">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+                <!-- Columna izquierda - Texto -->
+                <div class="order-2 lg:order-1">
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold mb-4">
+                        <span class="text-white">HOLA, SOY</span>
+                        <br>
+                        <span class="text-lime-400">DIEGO FORERO.</span>
+                    </h1>
+
+                    <p class="text-gray-400 text-lg mb-8 max-w-lg leading-relaxed">
+                        Desarrollador junior full-stack especializado en el desarrollo web con JavaScript (React, Express)
+                    </p>
+
+                    <div class="flex items-center space-x-4">
+                        <button
+                            class="bg-lime-400 text-black px-6 py-3 rounded-full font-semibold hover:bg-lime-300 transition-colors duration-300 flex items-center">
+                            <span>Contáctame</span>
+                            <i class="fas fa-circle ml-2 text-xs"></i>
+                        </button>
+
+                        <div class="flex space-x-3">
+                            <a href="https://www.linkedin.com/in/diego-forero-b50998277/"
+                                class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-gray-700 transition-colors duration-300" target="_blank">
+                                <i class="fab fa-linkedin-in text-gray-300"></i>
+                            </a>
+                            <a href="https://github.com/DiegoF1027"
+                                class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-gray-700 transition-colors duration-300">
+                                <i class="fab fa-github text-gray-300" target="_blank"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Columna derecha - Imagen -->
+                <div class="order-1 lg:order-2 flex justify-center">
+                    <img src="/assets/imgs/diegoForero.png" alt="Robert Garcia"
+                        class="max-w-md h-auto rounded-2xl object-cover">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="js/mobileMenu.js"></script>
+</body>
+
+</html>
