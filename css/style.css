@@ -43,6 +43,11 @@ html{
 }
 
 #sobreMi{
-    margin-left: 12rem;
+    margin-left: 11rem;
     margin-top: 9rem;
+}
+
+#experienciaTitulo{
+    margin-left: 10rem;
+    margin-top: 17rem;
 }

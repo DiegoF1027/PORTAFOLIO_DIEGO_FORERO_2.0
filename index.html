@@ -5,10 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Diego Forero - Desarrollador Junior</title>
-    <link rel="icon" href="/assets/imgs/portafolio.png">
+    <link rel="icon" href="assets/imgs/portafolio.png">
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="bg-black text-white font-sans">
@@ -22,7 +22,8 @@
                 <div class="hidden md:flex space-x-8" id="links">
                     <a href="#proyectosSeccion"
                         class="text-gray-300 hover:text-white transition-colors duration-300">Proyectos</a>
-                    <a href="#" class="text-gray-300 hover:text-white transition-colors duration-300">Acerca de mí</a>
+                    <a href="#seccionInformacion"
+                        class="text-gray-300 hover:text-white transition-colors duration-300">Acerca de mí</a>
                     <a href="#" class="text-gray-300 hover:text-white transition-colors duration-300">Contacto</a>
                 </div>
                 <!-- Menú móvil -->
@@ -66,8 +67,9 @@
                                 <i class="fab fa-linkedin-in text-lime-400"></i>
                             </a>
                             <a href="https://github.com/DiegoF1027"
-                                class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-gray-700 transition-colors duration-300">
-                                <i class="fab fa-github text-lime-400" target="_blank"></i>
+                                class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-gray-700 transition-colors duration-300"
+                                target="_blank">
+                                <i class="fab fa-github text-lime-400"></i>
                             </a>
                         </div>
                     </div>
@@ -75,7 +77,7 @@
 
                 <!-- Columna derecha - Imagen -->
                 <div class="order-1 lg:order-2 flex justify-center">
-                    <img src="/assets/imgs/diegoForero.png" alt="Robert Garcia"
+                    <img src="assets/imgs/diegoForero.png" alt="Robert Garcia"
                         class="max-w-md h-auto rounded-2xl object-cover">
                 </div>
             </div>
@@ -106,13 +108,14 @@
 
     <hr class="border-t border-gray-600 opacity-20" />
 
+    <!-- Sección de información -->
+    <!-- Sección de sobre mi -->
     <section class="bg-black text-white py-16 px-6 lg:px-16" id="seccionInformacion">
         <div class="max-w-7xl mx-auto">
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-12 items-start">
                 <!-- Columna Izquierda - Título -->
                 <div class="flex items-center justify-center lg:justify-start">
-                    <h2
-                        class="text-4xl md:text-5xl font-bold text-white mb-4 tracking-wider ml-2" id="sobreMi">
+                    <h2 class="text-4xl md:text-5xl font-bold text-white mb-4 tracking-wider ml-2" id="sobreMi">
                         SOBRE MÍ
                     </h2>
                 </div>
@@ -126,17 +129,24 @@
                             datos.
                         </h2>
                         <p class="text-base lg:text-lg text-gray-300 leading-relaxed">
-                            Me especializo en JavaScript y Python, desarrollando interfaces modernas con React.js y procesando datos con herramientas como Pandas y PySpark. Me apasiona aprender continuamente, optimizar procesos y resolver problemas mediante el código. He trabajado de forma independiente en sitios web personalizados y participado en tareas técnicas en entornos cloud como AWS y Azure DevOps. Fuera del desarrollo, disfruto del ciclismo, la fotografía y los videojuegos, siempre buscando nuevos retos para crecer profesionalmente.
+                            Me especializo en JavaScript y Python, desarrollando interfaces modernas con React.js y
+                            procesando datos con herramientas como Pandas y PySpark. Me apasiona aprender continuamente,
+                            optimizar procesos y resolver problemas mediante el código. He trabajado de forma
+                            independiente en sitios web personalizados y participado en tareas técnicas en entornos
+                            cloud como AWS y Azure DevOps. Fuera del desarrollo, disfruto del ciclismo, la fotografía y
+                            los videojuegos, siempre buscando nuevos retos para crecer profesionalmente.
                         </p>
                     </div>
 
                     <!-- Botón y Enlaces Sociales -->
                     <div class="flex flex-col sm:flex-row items-center gap-6 pt-6">
                         <!-- Botón Descargar CV -->
-                        <button
-                            class="bg-lime-400 text-black px-8 py-3 rounded-full font-semibold text-lg hover:bg-lime-300 transition-colors duration-300 transform hover:scale-105">
-                            DESCARGAR CV
-                        </button>
+                        <a href="assets/docs/cvDiegoForero.pdf" download>
+                            <button
+                                class="bg-lime-400 text-black px-8 py-3 rounded-full font-semibold text-lg hover:bg-lime-300 transition-colors duration-300 transform hover:scale-105">
+                                DESCARGAR CV
+                            </button>
+                        </a>
 
                         <div class="flex space-x-3">
                             <a href="https://www.linkedin.com/in/diego-forero-b50998277/"
@@ -145,8 +155,9 @@
                                 <i class="fab fa-linkedin-in text-lime-400"></i>
                             </a>
                             <a href="https://github.com/DiegoF1027"
-                                class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-gray-700 transition-colors duration-300">
-                                <i class="fab fa-github text-lime-400" target="_blank"></i>
+                                class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-gray-700 transition-colors duration-300"
+                                target="_blank">
+                                <i class="fab fa-github text-lime-400"></i>
                             </a>
                         </div>
                     </div>
@@ -155,7 +166,31 @@
         </div>
     </section>
 
+    <!-- Sección de experiencia -->
+    <section class="bg-black text-white py-16 px-6 lg:px-16">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-start">
+                <!-- Columna Izquierda - Título -->
+                <div class="flex items-center justify-center lg:justify-start">
+                    <h2 class="text-4xl md:text-5xl font-bold text-white mb-4 tracking-wider ml-2"
+                        id="experienciaTitulo">
+                        EXPERIENCIA
+                    </h2>
+                </div>
+
+                <!-- Columna Derecha - Lista de Experiencias -->
+                <div class="space-y-8">
+                    <div id="experiencia" class="space-y-8">
+                        <!-- Las experiencias se cargarán dinámicamente aquí -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Scripts -->
+    <script src="js/experiencia.js"></script>
+    <script src="js/renderExperiencia.js"></script>
     <script src="js/proyectosPortfolio.js"></script>
     <script src="js/renderProyectos.js"></script>
     <script src="js/mobileMenu.js"></script>
