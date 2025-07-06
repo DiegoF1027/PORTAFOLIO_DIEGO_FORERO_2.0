@@ -195,43 +195,99 @@
             <h2 class="text-4xl md:text-5xl font-bold text-white tracking-wider text-center mb-12">
                 TECNOLOGÍAS QUE UTILIZO
             </h2>
-            
+
             <!-- Contenedor del carrusel -->
             <div class="relative">
                 <!-- Flecha izquierda -->
-                <button 
-                    id="prevBtn" 
+                <button id="prevBtn"
                     class="arrow-button absolute left-0 top-1/2 transform -translate-y-1/2 z-10 bg-gray-800 hover:bg-gray-700 text-lime-400 hover:text-lime-300 rounded-full p-3 shadow-lg transition-all duration-300"
-                    aria-label="Anterior tecnología"
-                >
+                    aria-label="Anterior tecnología">
                     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7">
+                        </path>
                     </svg>
                 </button>
-                
+
                 <!-- Flecha derecha -->
-                <button 
-                    id="nextBtn" 
+                <button id="nextBtn"
                     class="arrow-button absolute right-0 top-1/2 transform -translate-y-1/2 z-10 bg-gray-800 hover:bg-gray-700 text-lime-400 hover:text-lime-300 rounded-full p-3 shadow-lg transition-all duration-300"
-                    aria-label="Siguiente tecnología"
-                >
+                    aria-label="Siguiente tecnología">
                     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
                     </svg>
                 </button>
-                
+
                 <!-- Contenedor del carrusel -->
-                <div 
-                    id="carouselContainer" 
+                <div id="carouselContainer"
                     class="carousel-container flex overflow-x-auto scroll-smooth snap-x snap-mandatory gap-6 px-12 py-8"
-                    style="scrollbar-width: none;"
-                >
+                    style="scrollbar-width: none;">
                     <!-- Las tecnologías se cargarán dinámicamente aquí -->
                 </div>
             </div>
         </div>
     </section>
 
+    <hr class="border-t border-gray-600 opacity-20" />
+
+    <!-- Sección de contacto -->
+    <section
+        class="bg-black text-white min-h-[20rem] flex flex-col items-start p-8 lg:flex-row lg:items-start lg:justify-center lg:py-20" id="seccionContacto">
+        <!-- Columna izquierda -->
+        <div class="w-full lg:w-[22%]">
+            <h2 class="text-5xl font-extrabold mb-6">HABLEMOS</h2>
+            <p class="mb-2" id="correoTexto">Puedes escribirme a <a href="mailto:robertgarcia@gmail.com"
+                    class="text-lime-300 underline">robertgarcia@gmail.com</a></p>
+            <p class="mb-6">Para más información, revisa mi <a href="#seccionInformacion" class="text-lime-300 underline">currículum</a>
+            </p>
+
+            <!-- Iconos -->
+            <div class="flex space-x-6 text-lime-300 text-2xl mt-8">
+                <a href="https://www.linkedin.com/in/diego-forero-b50998277/" aria-label="LinkedIn" target="_blank">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://github.com/DiegoF1027" aria-label="GitHub" target="_blank">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.instagram.com/diegoflorero/" aria-label="Instagram" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
+
+
+            <!-- Footer -->
+            <p class="text-sm mt-12">&copy; 2023 Robert Garcia</p>
+        </div>
+
+        <!-- Formulario (derecha) con margen izquierdo en pantallas grandes -->
+        <div class="w-full lg:w-[30%] mt-12 lg:mt-0 lg:ml-12">
+            <form class="space-y-6">
+                <div class="flex flex-col space-y-2">
+                    <label for="nombre" class="text-sm">Nombre</label>
+                    <input id="nombre" type="text"
+                        class="bg-neutral-900 text-white px-4 py-3 rounded-md focus:outline-none" placeholder="Ingresa tu nombre"/>
+                </div>
+                <div class="flex flex-col space-y-2">
+                    <label for="correo" class="text-sm">Correo</label>
+                    <input id="correo" type="email"
+                        class="bg-neutral-900 text-white px-4 py-3 rounded-md focus:outline-none" placeholder="Ingresa tu correo"/>
+                </div>
+                <div class="flex flex-col space-y-2">
+                    <label for="mensaje" class="text-sm">Mensaje</label>
+                    <textarea id="mensaje" rows="5"
+                        class="bg-neutral-900 text-white px-4 py-3 rounded-md focus:outline-none" placeholder="Ingresa tu mensaje"></textarea>
+                </div>
+                <button type="submit"
+                    class="bg-lime-300 text-black font-semibold px-8 py-3 rounded-full hover:bg-lime-400 transition-all">
+                    ENVIAR
+                </button>
+            </form>
+        </div>
+    </section>
+
+
+
+    <!-- FontAwesome CDN para íconos -->
+    <script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
     <!-- Scripts -->
     <script src="js/tecnologias.js"></script>
     <script src="js/renderTecnologias.js"></script>

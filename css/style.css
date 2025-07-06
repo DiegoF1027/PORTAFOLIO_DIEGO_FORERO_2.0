@@ -82,3 +82,13 @@ html {
 .arrow-button:hover {
     transform: scale(1.1);
 }
+
+#correoTexto {
+    font-size: 1.2rem;
+}
+
+#seccionContacto label{
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 0.3rem;
+}
