@@ -36,7 +36,7 @@
         </nav>
     </header>
 
-    <!-- Sección Hero -->
+    <!-- Sección Principal -->
     <section class="bg-black min-h-screen flex items-center">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
@@ -188,7 +188,53 @@
         </div>
     </section>
 
+    <!-- Sección carrusel de tecnologías -->
+    <section class="py-16 px-4 bg-black">
+        <div class="max-w-7xl mx-auto">
+            <!-- Título principal -->
+            <h2 class="text-4xl md:text-5xl font-bold text-white tracking-wider text-center mb-12">
+                TECNOLOGÍAS QUE UTILIZO
+            </h2>
+            
+            <!-- Contenedor del carrusel -->
+            <div class="relative">
+                <!-- Flecha izquierda -->
+                <button 
+                    id="prevBtn" 
+                    class="arrow-button absolute left-0 top-1/2 transform -translate-y-1/2 z-10 bg-gray-800 hover:bg-gray-700 text-lime-400 hover:text-lime-300 rounded-full p-3 shadow-lg transition-all duration-300"
+                    aria-label="Anterior tecnología"
+                >
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+                    </svg>
+                </button>
+                
+                <!-- Flecha derecha -->
+                <button 
+                    id="nextBtn" 
+                    class="arrow-button absolute right-0 top-1/2 transform -translate-y-1/2 z-10 bg-gray-800 hover:bg-gray-700 text-lime-400 hover:text-lime-300 rounded-full p-3 shadow-lg transition-all duration-300"
+                    aria-label="Siguiente tecnología"
+                >
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                    </svg>
+                </button>
+                
+                <!-- Contenedor del carrusel -->
+                <div 
+                    id="carouselContainer" 
+                    class="carousel-container flex overflow-x-auto scroll-smooth snap-x snap-mandatory gap-6 px-12 py-8"
+                    style="scrollbar-width: none;"
+                >
+                    <!-- Las tecnologías se cargarán dinámicamente aquí -->
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Scripts -->
+    <script src="js/tecnologias.js"></script>
+    <script src="js/renderTecnologias.js"></script>
     <script src="js/experiencia.js"></script>
     <script src="js/renderExperiencia.js"></script>
     <script src="js/proyectosPortfolio.js"></script>
